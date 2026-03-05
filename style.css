@@ -1,0 +1,391 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* The 7-Tab Menu */
+nav {
+    background: #2d3436;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Keeps it from breaking on mobile */
+}
+
+nav li { margin: 5px 15px; }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #00cec9; }
+
+/* Content Box */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 { color: #2d3436; }
+
+/* Home Page Specific Styles */
+.hero h2 {
+    color: #636e72;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+/* Button Styling */
+.btn-primary, .btn-secondary {
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #00cec9;
+    color: white;
+}
+
+.btn-secondary {
+    border: 2px solid #2d3436;
+    color: #2d3436;
+}
+
+.btn-primary:hover { opacity: 0.8; }
+.btn-secondary:hover { background: #2d3436; color: white; }
+
+/* About Page Styling */
+.about-section h3 {
+    color: #00cec9;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 750px; /* Keeps lines from being too long and hard to read */
+}
+
+/* Optional: Adding a subtle border-left to the story section */
+.about-text {
+    border-left: 4px solid #eee;
+    padding-left: 25px;
+}
+
+/* Project Grid Layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.project-image img {
+    width: 100%;       /* Fills the width of the card */
+    height: 200px;      /* Forces a consistent height for all cards */
+    object-fit: cover;  /* MAGIC: Crops the image to fit instead of stretching it */
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #2d3436;
+}
+
+.tags {
+    margin: 15px 0;
+}
+
+.tags span {
+    background: #f0f0f0;
+    color: #636e72;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.project-link {
+    color: #00cec9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Skills Page Styling */
+.skills-wrapper {
+    margin-top: 30px;
+}
+
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h3 {
+    border-left: 4px solid #00cec9;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    color: #2d3436;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-badge {
+    background: #f1f2f6;
+    color: #2d3436;
+    padding: 10px 20px;
+    border-radius: 50px; /* Makes them pill-shaped */
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 1px solid #dfe6e9;
+}
+
+.skill-badge:hover {
+    background: #00cec9;
+    color: white;
+    transform: scale(1.05);
+    border-color: #00cec9;
+}
+
+/* Reviews Gallery Styling */
+.reviews-gallery {
+    display: flex;
+    flex-direction: column; /* Stacks them vertically */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.review-card {
+    display: flex; /* Side-by-side layout */
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.review-image {
+    flex: 1; /* Takes up 40% of the card */
+    min-width: 250px;
+}
+
+.review-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-content {
+    flex: 2; /* Takes up 60% of the card */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #2d3436;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 3rem;
+    color: #00cec9;
+    line-height: 0;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.client-info strong {
+    display: block;
+    color: #2d3436;
+    font-size: 1.1rem;
+}
+
+.client-info span {
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+/* Mobile: Stack image on top of text */
+@media (max-width: 768px) {
+    .review-card {
+        flex-direction: column;
+    }
+    .review-image {
+        height: 200px;
+    }
+}
+
+/* Contact Page Styling */
+.contact-wrapper {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.contact-form {
+    flex: 2;
+}
+
+.contact-info {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00cec9;
+    box-shadow: 0 0 0 2px rgba(0, 206, 201, 0.1);
+}
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+.info-item h4 {
+    margin: 0 0 5px 0;
+    color: #00cec9;
+}
+
+.social-links a {
+    display: block;
+    color: #636e72;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00cec9;
+    padding-left: 5px;
+}
+
+/* Mobile: Stack form and info */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
+
+```css
+/* Bottom Profile Section */
+.profile-footer {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover;
+    border: 3px solid #00cec9; /* Adds a nice teal ring around your photo */
+}
+
+.footer-text h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2d3436;
+}
+
+.footer-text p {
+    margin: 5px 0 0 0;
+    font-size: 0.95rem;
+    color: #636e72;
+}
+
+/* Mobile: Center everything on small screens */
+@media (max-width: 600px) {
+    .profile-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
