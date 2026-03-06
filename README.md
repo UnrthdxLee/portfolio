@@ -22,7 +22,7 @@ You can view the live version here:
 │
 ├── style.css         # Main stylesheet
 │
-└── assets/           # Images, icons, or media (if any)
+└── assets/           # Images
            ├── me.jpg
            ├── project1.jpg
            ├── project2.jpg
