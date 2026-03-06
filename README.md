@@ -26,13 +26,12 @@ You can view the live version here:
            ├── me.jpg
            ├── project1.jpg
            ├── project2.jpg
-           ├── project3.jpg
+           ├── project3.png
            ├── project4.jpg
            ├── project5.jpg
            ├── project6.jpg
            ├── project7.jpg
            ├── project9.jpg
-           ├── project3.png
            
 ```
 
